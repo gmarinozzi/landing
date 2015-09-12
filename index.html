@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Landing</title>
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700);
+	*{padding:0; margin: 0}
+	html, body{height: 100%; color:#fff;}
+	section{width:100%; height: 100%;  }
+
+	#brand{background-color:#F32349;}
+	#servicios{background-color:#FC6A22;}
+	#metodo{background-color:#86B060;}
+	#principios{background-color:#037E8C;}
+	#action{background-color:#0066A8;}
+
+	.container{text-align: center;}
+	.content-center{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width: 100%; max-width: 1400px;}
+
+	h1{font: 100 120px/140px 'Lato', sans-serif;}
+	h3{font: 300 18px/28px 'Lato', sans-serif; letter-spacing: 1pt;}
+	ul{padding: 0 10%; overflow: hidden;}
+	li{width:30%; float: left; list-style: none; padding-right: 5%; margin-top: 50px;}
+	li:nth-child(3n){padding-right: 0%;}
+	dt{font: 400 20px/38px 'Lato', sans-serif; letter-spacing: 1pt;}
+	dd{font: 300 15px/28px 'Lato', sans-serif;letter-spacing: 0.5pt;}
+	p{font: 400 14px/20px 'Lato', sans-serif; color:#fff; padding-top: 80px;}
+	p a{color:rgba(0, 0, 0, .3); text-decoration: none; font-weight: 700; padding-left: 5px;}
+	p a:hover{color:rgba(0, 0, 0, .4); text-decoration: none;}
+
+	form{width: 90%; margin: 0 auto; text-align: center;}
+	label{font:300 12px/14px 'Lato', sans-serif; display:block; letter-spacing: 0.5pt; padding: 30px 0 10px 0;}
+	input,textarea{background-color: transparent; padding-bottom:10px; font: 300 20px/20px 'Lato', sans-serif; border:none;  width: 100%; color:#fff; text-align: center; -webkit-appearance:none;}
+	textarea{height:60px; overflow: auto; overflow-x: hidden; font-size: 16px;}
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: rgba(255, 255, 255, .5);font-size: 20px;}
+	input:focus, textarea:focus {outline:none;}
+	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{color: transparent;}
+	input[type=submit]{ padding-top:6px; border: none; background-color: rgba(255, 255, 255, .4); color:#0066A8; margin: 10px auto; line-height: 30px; transition: all .2s ease;border-radius:3px; max-width: 300px;}
+	input[type=submit]:hover{border: none; background-color: #fff;color: #333; cursor: pointer; }
+
+	/*media queries*/
+	@media (max-width: 1200px) {
+	  	li{width:30%; float: left; padding-right: 5%; margin-top: 50px;}
+		dd{font: 300 14px/28px 'Lato', sans-serif;letter-spacing: 0.5pt;}
+	}
+	@media (max-width: 900px) {
+		.content-center{padding-left: 20px; padding-right: 20px; padding-left: 20px; padding-right: 20px; box-sizing:border-box;}
+		h1{font: 100 60px/100px 'Lato', sans-serif;}
+	  	ul.n2 li{width:45%; float: left; padding-right: 10%;}
+	  	ul.n2 li:nth-child(2n){padding-right: 0%;}
+	  	li{width:100%; float: none; padding-right: 0%; margin-top: 20px;}
+		dt{font: 400 18px/28px 'Lato', sans-serif;}
+		dd{font: 300 14px/18px 'Lato', sans-serif;}
+	}
+	@media (max-width: 600px) {
+		h1{font: 100 50px/90px 'Lato', sans-serif;}
+		h3{font: 300 16px/20px 'Lato', sans-serif;}
+	  	ul.n2 li{width:100%; padding-right: 0%;}
+	  	dt{font: 400 16px/22px 'Lato', sans-serif;}
+		dd{font: 300 13px/16px 'Lato', sans-serif;}
+		p{padding-top: 40px;}
+	}
+</style>
+</head>
+
+<body>
+	<!-- <section id="brand">
+		<div class="wrapper">
+			<div class="container">
+				<div class="content-center">
+					<h1>LO-GO-3</h1>
+					<h3>Praesent at est urna. <br>
+						Vestibulum venenatis vel ipsum in placerat.</h3>
+					<p>¿Tienes una idea? <a href="#">Cuéntanos</a></p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section id="servicios">
+		<div class="wrapper">
+			<div class="container">
+				<div class="content-center">
+					<h1>SER-VI-CIOS</h1>
+					<ul>
+						<li>
+							<dl>
+								<dt>Web Apps</dt>
+								<dd>Son sitios web que permiten la interacción con usuarios y redes sociales. Nuestros diseños son perfectamente adaptables a tablets y smartphones y nuestro código basado en un API central permite crear aplicaciones móbiles de forma muy eficiente.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Mobile Apps</dt>
+								<dd>Son aplicaciones especialmente creadas para interactuar con dispositivos móviles y tabletas. Nuestra estructura de trabajo basada en un API central, nos permite crear aplicaciones móbiles a partir de una aplicación Web de forma muy sencilla.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Consultoría y capacitación</dt>
+								<dd>Contamos con la experiencia del trabajo y la capcitación constante. Vemos en cada consultoría un reto para aprender nuevas tecnologías, y en cada capacitación la oportunidad compartirlas para revivir la pasión de haberlas aprendido.</dd>
+							</dl>
+						</li>
+					</ul>
+					<p>¿Necesitas una? <a href="#">Contáctanos</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="metodo">
+		<div class="wrapper">
+			<div class="container">
+				<div class="content-center">
+					<h1>MÉ-TO-DO</h1>
+					<ul class="n2">
+						<li>
+							<dl>
+								<dt>Estrategia</dt>
+								<dd>Primero escuchamos tu necesidad, luego proponemos ideas.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Conceptualización</dt>
+								<dd>Cuando la idea comienza a tomar forma: definimos usuarios y flujos.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Diseño</dt>
+								<dd>Ya sabemos qué hay que comunicar, es hora de hacerlo simple, fácil y bonito.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Desarrollo</dt>
+								<dd>No sólo hacemos funcionar tu idea, lo hacermos de forma ágil, innovadora y flexible.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Lanzamiento</dt>
+								<dd>Es el momento de poner en marcha tu app para que los usuarios puedan disfrutarla.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Monitoreo</dt>
+								<dd>Se trata de observar a nuestros usuarios para tomar las mejores decisiones.</dd>
+							</dl>
+						</li>
+					</ul>
+					<p>¿Te interesa? <a href="#">Mándanos tu idea</a></p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- <section id="principios">
+		<div class="wrapper">
+			<div class="container">
+				<div class="content-center">
+					<h1>PRIN-CI-PIOS</h1>
+					<ul>
+						<li>
+							<dl>
+								<dt>Síntesis</dt>
+								<dd>Buscamos la pureza de las ideas para lograr la armonía en cada creación.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Continuidad</dt>
+								<dd>Hacemos de las ideas nuestra pasión y ponemos nuestra energía en concretarlas.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Fe</dt>
+								<dd>Confiamos en las ideas y en la posibilidad de llegar a soluciones perfectas.</dd>
+							</dl>
+						</li>
+					</ul>
+					<p>¿Quieres colaborar? <a href="#">Escríbenos</a></p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- <section id="action">
+		<div class="wrapper">
+			<div class="container">
+				<div class="content-center">
+					<h1>CON-TAC-TO</h1>
+					<h3>Sabemos que tienes una gran idea,<br>por eso queremos conocerte:</h3>
+					<form>
+						<label for='name'>Nombre</label>
+						<input type='text' id='name' placeholder='¿Cómo te llamas?' id='name' autocomplete='off'>
+						<label for='email'>Email</label>
+						<input type='text' id='email' placeholder='¿Dónde quieres que te respondamos?' autocomplete='off'>
+						<label for='message'>Mensaje</label>
+						<textarea id='message' placeholder='¿Cómo te podemos ayudar?'></textarea>
+						<input type='submit' value='Enviar'>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section> -->
+</body>
+</html>
