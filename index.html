@@ -4,61 +4,65 @@
 <meta charset="UTF-8">
 <title>Landing</title>
 <style type="text/css">
-	@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700);
+	@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 	*{padding:0; margin: 0}
 	html, body{height: 100%; color:#fff;}
 	section{width:100%; height: 100%;  }
 
-	#brand{background-color:#F32349;}
-	#servicios{background-color:#FC6A22;}
-	#metodo{background-color:#86B060;}
-	#principios{background-color:#037E8C;}
-	#action{background-color:#0066A8;}
+	#brand{background-color:#0c24fb; color:#fff;}
+	#servicios{background-color:#fffd38; color: #111;}
+	#servicios p{
+		color: #111;
+	}
+
+	#metodo{background-color:#6625fb;}
+	#principios{background-color:#fc431e;}
+	#action{background-color:#ffffff; color:#0c24fb;}
 
 	.container{text-align: center;}
 	.content-center{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width: 100%; max-width: 1400px;}
 
-	h1{font: 100 120px/140px 'Lato', sans-serif;}
-	h3{font: 300 18px/28px 'Lato', sans-serif; letter-spacing: 1pt;}
+	h1{font: 100 120px/140px 'Secular One', sans-serif;}
+	h3{font: 300 18px/28px sans-serif; letter-spacing: 1pt;}
 	ul{padding: 0 10%; overflow: hidden;}
 	li{width:30%; float: left; list-style: none; padding-right: 5%; margin-top: 50px;}
 	li:nth-child(3n){padding-right: 0%;}
-	dt{font: 400 20px/38px 'Lato', sans-serif; letter-spacing: 1pt;}
-	dd{font: 300 15px/28px 'Lato', sans-serif;letter-spacing: 0.5pt;}
-	p{font: 400 14px/20px 'Lato', sans-serif; color:#fff; padding-top: 80px;}
-	p a{color:rgba(0, 0, 0, .3); text-decoration: none; font-weight: 700; padding-left: 5px;}
-	p a:hover{color:rgba(0, 0, 0, .4); text-decoration: none;}
+	dt{font: 400 20px/38px  sans-serif; letter-spacing: 1pt;}
+	dd{font: 300 16px/28px  sans-serif;letter-spacing: 0.5pt;}
+	p{font: 400 16px/20px sans-serif; color:#fff; padding-top: 80px;}
+	p a{color:rgba(0, 0, 0, .4); text-decoration: none; font-weight: 700; padding-left: 5px;}
+	p a:hover{color:rgba(0, 0, 0, .5); text-decoration: none;}
 
 	form{width: 90%; margin: 0 auto; text-align: center;}
-	label{font:300 12px/14px 'Lato', sans-serif; display:block; letter-spacing: 0.5pt; padding: 30px 0 10px 0;}
-	input,textarea{background-color: transparent; padding-bottom:10px; font: 300 20px/20px 'Lato', sans-serif; border:none;  width: 100%; color:#fff; text-align: center; -webkit-appearance:none;}
-	textarea{height:60px; overflow: auto; overflow-x: hidden; font-size: 16px;}
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: rgba(255, 255, 255, .5);font-size: 20px;}
+	label{font:300 13px/14px sans-serif; display:block; letter-spacing: 0.5pt; padding: 30px 0 10px 0;}
+	input,textarea{background-color: transparent; padding-bottom:10px; font: 300 20px/20px  sans-serif; border:none;  width: 100%; color:#0c24fb; text-align: center; -webkit-appearance:none;}
+	textarea{height:60px; overflow: auto; overflow-x: hidden; font-size: 20px;}
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: rgba(12, 36, 251, .5);font-size: 20px;}
 	input:focus, textarea:focus {outline:none;}
 	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{color: transparent;}
-	input[type=submit]{ padding-top:6px; border: none; background-color: rgba(255, 255, 255, .4); color:#0066A8; margin: 10px auto; line-height: 30px; transition: all .2s ease;border-radius:3px; max-width: 300px;}
-	input[type=submit]:hover{border: none; background-color: #fff;color: #333; cursor: pointer; }
+	input[type=submit]{ font: 24px/30px 'Secular One', sans-serif ;padding-top:10px; border: none; background-color: rgba(12, 36, 251, .8); color: #fff; margin: 10px auto; transition: all .2s ease;border-radius:3px; max-width: 300px;}
+	input[type=submit]:hover{border: none; background-color: #0c24fb;color: #fff; cursor: pointer; }
 
 	/*media queries*/
 	@media (max-width: 1200px) {
 	  	li{width:30%; float: left; padding-right: 5%; margin-top: 50px;}
-		dd{font: 300 14px/28px 'Lato', sans-serif;letter-spacing: 0.5pt;}
+		dd{font: 300 14px/28px 'Secular One', sans-serif;letter-spacing: 0.5pt;}
 	}
 	@media (max-width: 900px) {
 		.content-center{padding-left: 20px; padding-right: 20px; padding-left: 20px; padding-right: 20px; box-sizing:border-box;}
-		h1{font: 100 60px/100px 'Lato', sans-serif;}
+		h1{font: 100 60px/100px 'Secular One', sans-serif;}
 	  	ul.n2 li{width:45%; float: left; padding-right: 10%;}
 	  	ul.n2 li:nth-child(2n){padding-right: 0%;}
 	  	li{width:100%; float: none; padding-right: 0%; margin-top: 20px;}
-		dt{font: 400 18px/28px 'Lato', sans-serif;}
-		dd{font: 300 14px/18px 'Lato', sans-serif;}
+		dt{font: 400 18px/28px 'Secular One', sans-serif;}
+		dd{font: 300 14px/18px 'Secular One', sans-serif;}
 	}
 	@media (max-width: 600px) {
-		h1{font: 100 50px/90px 'Lato', sans-serif;}
-		h3{font: 300 16px/20px 'Lato', sans-serif;}
+		h1{font: 100 50px/90px 'Secular One', sans-serif;}
+		h3{font: 300 16px/20px 'Secular One', sans-serif;}
 	  	ul.n2 li{width:100%; padding-right: 0%;}
-	  	dt{font: 400 16px/22px 'Lato', sans-serif;}
-		dd{font: 300 13px/16px 'Lato', sans-serif;}
+	  	dt{font: 400 15px/22px 'Secular One', sans-serif;}
+		dd{font: 300 13px/16px 'Secular One', sans-serif;}
 		p{padding-top: 40px;}
 	}
 </style>
@@ -69,7 +73,7 @@
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
-					<h1>LO-GO-3</h1>
+					<h1>IN-MU-TA-BLE</h1>
 					<h3>Praesent at est urna. <br>
 						Vestibulum venenatis vel ipsum in placerat.</h3>
 					<p>¿Tienes una idea? <a href="#">Cuéntanos</a></p>
@@ -102,12 +106,12 @@
 							</dl>
 						</li>
 					</ul>
-					<p>¿Necesitas una? <a href="#">Contáctanos</a></p>
+					<p>¿Necesitas un servicio? <a href="#">Contáctanos</a></p>
 				</div>
 			</div>
 		</div>
 	</section> -->
-	<!-- <section id="metodo">
+<!-- 	<section id="metodo">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -155,7 +159,7 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- <section id="principios">
+<!-- 	<section id="principios">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -185,7 +189,7 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- <section id="action">
+<!-- 	<section id="action">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
