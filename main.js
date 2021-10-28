@@ -1,4 +1,5 @@
 // // Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
+// https://www.freecodecamp.org/news/javascript-debounce-example/
 
 // let lastKnownScrollPosition = 0;
 // let ticking = false;
