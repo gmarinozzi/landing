@@ -7,7 +7,10 @@
 	@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 	*{padding:0; margin: 0}
 	html, body{height: 100%; color:#fff;}
-	section{width:100%; height: 100%;  }
+	section{width:100%; height: 99.99%;  }
+
+	.hide{visibility: hidden;}
+	.remove{display: none;}
 
 	#brand{background-color:#0c24fb; color:#fff;}
 	#servicios{background-color:#fffd38; color: #111;}
@@ -71,7 +74,7 @@
 
 <body>
 	<section id="brand">
-		<!-- <div class="wrapper">
+		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
 					<h1>IN-MU-TA-BLE</h1>
@@ -81,8 +84,10 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
-	<!-- <section id="servicios">
+	</section>
+	<span style="height: 0.01%;">&nbsp;</span>
+
+	<section id="servicios" class="remove">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -111,8 +116,10 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
-<!-- 	<section id="metodo">
+	</section>
+	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+
+	<section id="metodo" class="remove">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -159,8 +166,10 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
-<!-- 	<section id="principios">
+	</section>
+	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+
+	<section id="principios" class="remove">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -189,8 +198,10 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
-<section id="clients">
+	</section>
+	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+
+<section id="clients" class="remove">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -232,7 +243,9 @@
 			</div>
 		</div>
 	</section>
-<!-- 	<section id="action">
+	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+
+	<section id="action" class="remove">
 		<div class="wrapper">
 			<div class="container">
 				<div class="content-center">
@@ -251,6 +264,7 @@
 			</div>
 		</div>
 	</section>
- -->
+
+ <script src="./main.js"></script>
 </body>
 </html>
