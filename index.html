@@ -3,268 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <title>Landing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style type="text/css">
 	@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-	*{padding:0; margin: 0}
+	/* *{padding:0; margin: 0}
 	html, body{height: 100%; color:#fff;}
-	section{width:100%; height: 99.99%;  }
+	section{width:100%; height: 99.99%;  } */
 
-	.hide{visibility: hidden;}
-	.remove{display: none;}
-
-	#brand{background-color:#0c24fb; color:#fff;}
-	#servicios{background-color:#fffd38; color: #111;}
+	/* .hide{visibility: hidden;}
+	.remove{display: none;} */
+	body{
+		font: 16px/20px sans-serif;
+	}
+	#brand{background-color:#2b37fb; color:#fff;}
+	#brand h3 span{
+		color: #2b37fb;
+		background-color: #fff;
+		display: inline-block;
+		padding: 2px 2px 0 2px;
+	}
+	#servicios{background-color:#fff741; color: #111;}
 	#servicios p{
 		color: #111;
 	}
 
-	#metodo{background-color:#6625fb;}
-	#principios{background-color:#fc431e;}
-	#action{background-color:#ffffff; color:#0c24fb;}
+	#metodo{background-color:#6625fb; color:#fff;}
+
+	#principios{background-color:#fc272e;}
+	#action{background-color:#ffffff; color:#2b37fb;}
 	#clients{background-color:#111; color:#ccc;}
+	#clients li{width:200px;}
+	#clients a{color:#ccc;}
+	#clients a:hover{color:#fff;}
 
-	.container{text-align: center;}
-	.content-center{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width: 100%; max-width: 1400px;}
+	.container{text-align: center; max-width: 980px; margin-left: auto; margin-right: auto}
+	/* .content-center{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width: 100%; max-width: 1400px;} */
 
-	h1{font: 100 120px/140px 'Secular One', sans-serif;}
-	h3{font: 300 18px/28px sans-serif; letter-spacing: 1pt;}
-	ul{padding: 0 10%; overflow: hidden;}
-	li{width:30%; float: left; list-style: none; padding-right: 5%; margin-top: 50px;}
-	li:nth-child(3n){padding-right: 0%;}
+	h1{font: 120px/100px 'Secular One', sans-serif; margin: 0}
+	h3{font: 20px/20px 'Secular One', sans-serif; letter-spacing: 1pt;}
+	ul{display:flex; justify-content: center; padding-left: 0; flex-wrap:wrap;}
+	li{ width: 280px; list-style: none; margin:0; padding: 20px}
 	dt{font: 400 20px/38px  sans-serif; letter-spacing: 1pt;}
-	dd{font: 300 16px/28px  sans-serif;letter-spacing: 0.5pt;}
-	p{font: 400 16px/20px sans-serif; color:#fff; padding-top: 80px;}
-	p a{color:rgba(0, 0, 0, .4); text-decoration: none; font-weight: 700; padding-left: 5px;}
-	p a:hover{color:rgba(0, 0, 0, .5); text-decoration: none;}
+	dd{font: 300 16px/28px  sans-serif;letter-spacing: 0.5pt; margin:0;}
+	p{font: 400 16px/20px sans-serif; color:#fff; }
+	a{ text-decoration:none;}
+	a:hover{ text-decoration: underline;}
 
 	form{width: 90%; margin: 0 auto; text-align: center;}
 	label{font:300 13px/14px sans-serif; display:block; letter-spacing: 0.5pt; padding: 30px 0 10px 0;}
-	input,textarea{background-color: transparent; padding-bottom:10px; font: 300 20px/20px  sans-serif; border:none;  width: 100%; color:#0c24fb; text-align: center; -webkit-appearance:none;}
+	input,textarea{background-color: transparent; padding-bottom:10px; font: 300 20px/20px  sans-serif; border:none;  width: 100%; color:#2b37fb; text-align: center; -webkit-appearance:none;}
 	textarea{height:60px; overflow: auto; overflow-x: hidden; font-size: 20px;}
 	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: rgba(12, 36, 251, .5);font-size: 20px;}
 	input:focus, textarea:focus {outline:none;}
 	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{color: transparent;}
 	input[type=submit]{ font: 24px/30px 'Secular One', sans-serif ;padding-top:10px; border: none; background-color: rgba(12, 36, 251, .8); color: #fff; margin: 10px auto; transition: all .2s ease;border-radius:3px; max-width: 300px;}
-	input[type=submit]:hover{border: none; background-color: #0c24fb;color: #fff; cursor: pointer; }
+	input[type=submit]:hover{border: none; background-color: #2b37fb;color: #fff; cursor: pointer; }
 
 	/*media queries*/
 	@media (max-width: 1200px) {
-	  	li{width:30%; float: left; padding-right: 5%; margin-top: 50px;}
-		dd{font: 300 14px/28px 'Secular One', sans-serif;letter-spacing: 0.5pt;}
 	}
 	@media (max-width: 900px) {
 		.content-center{padding-left: 20px; padding-right: 20px; padding-left: 20px; padding-right: 20px; box-sizing:border-box;}
-		h1{font: 100 60px/100px 'Secular One', sans-serif;}
-	  	ul.n2 li{width:45%; float: left; padding-right: 10%;}
-	  	ul.n2 li:nth-child(2n){padding-right: 0%;}
-	  	li{width:100%; float: none; padding-right: 0%; margin-top: 20px;}
-		dt{font: 400 18px/28px 'Secular One', sans-serif;}
-		dd{font: 300 14px/18px 'Secular One', sans-serif;}
+		h1{font: 100 60px/80px 'Secular One', sans-serif;}
+  	li{ margin-top: 20px; padding: 0 10px}
+		dt{font: 400 18px/28px  sans-serif;}
+		dd{font: 300 14px/18px  sans-serif;}
 	}
 	@media (max-width: 600px) {
-		h1{font: 100 50px/90px 'Secular One', sans-serif;}
-		h3{font: 300 16px/20px 'Secular One', sans-serif;}
-	  	ul.n2 li{width:100%; padding-right: 0%;}
-	  	dt{font: 400 15px/22px 'Secular One', sans-serif;}
-		dd{font: 300 13px/16px 'Secular One', sans-serif;}
-		p{padding-top: 40px;}
+		h1{font: 50px/70px 'Secular One', sans-serif;}
+		h3{font: 300 16px/20px sans-serif;}
+  	ul li{width:100%; padding: 0%; margin: 0!important;}
+  	dt{font: 400 15px/22px sans-serif;}
+		dd{font: 300 13px/16px sans-serif; }
+		p{font-size: 14px;}
 	}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-	<section id="brand">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>IN-MU-TA-BLE</h1>
-					<h3>Praesent at est urna. <br>
-						Vestibulum venenatis vel ipsum in placerat.</h3>
-					<p>¿Tienes una idea? <a href="#">Cuéntanos</a></p>
+	<div id="fullpage">
+		<section id="brand" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>INMUTABLE</h1>
+						<h3><span>BUILD THE PERFECT DATA PRODUCT</span></h3>
+						<p>Simple, data, flows, that work.</p>
+						<p>
+							Streamline complex interactions between people and data.
+							<br>
+							From collecting, storing and transforming bits of information into actionable insights.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<span style="height: 0.01%;">&nbsp;</span>
+		</section>
 
-	<section id="servicios" class="remove">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>SER-VI-CIOS</h1>
-					<ul>
-						<li>
-							<dl>
-								<dt>Web Apps</dt>
-								<dd>Son sitios web que permiten la interacción con usuarios y redes sociales. Nuestros diseños son perfectamente adaptables a tablets y smartphones y nuestro código basado en un API central permite crear aplicaciones móbiles de forma muy eficiente.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Mobile Apps</dt>
-								<dd>Son aplicaciones especialmente creadas para interactuar con dispositivos móviles y tabletas. Nuestra estructura de trabajo basada en un API central, nos permite crear aplicaciones móbiles a partir de una aplicación Web de forma muy sencilla.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Consultoría y capacitación</dt>
-								<dd>Contamos con la experiencia del trabajo y la capcitación constante. Vemos en cada consultoría un reto para aprender nuevas tecnologías, y en cada capacitación la oportunidad compartirlas para revivir la pasión de haberlas aprendido.</dd>
-							</dl>
-						</li>
-					</ul>
-					<p>¿Necesitas un servicio? <a href="#">Contáctanos</a></p>
+		<section id="servicios" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>SERVICES</h1>
+						<p>
+							We build tailor-made solutions based on how your team works. Not the other way around.
+							<br>
+							Whether it is a web, a mobile application or just to advice you and your team, we’ll be there for you every step of the way.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+		</section>
 
-	<section id="metodo" class="remove">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>MÉ-TO-DO</h1>
-					<ul class="n2">
-						<li>
-							<dl>
-								<dt>Estrategia</dt>
-								<dd>Primero escuchamos tu necesidad, luego proponemos ideas.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Conceptualización</dt>
-								<dd>Cuando la idea comienza a tomar forma: definimos usuarios y flujos.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Diseño</dt>
-								<dd>Ya sabemos qué hay que comunicar, es hora de hacerlo simple, fácil y bonito.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Desarrollo</dt>
-								<dd>No sólo hacemos funcionar tu idea, lo hacermos de forma ágil, innovadora y flexible.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Lanzamiento</dt>
-								<dd>Es el momento de poner en marcha tu app para que los usuarios puedan disfrutarla.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Monitoreo</dt>
-								<dd>Se trata de observar a nuestros usuarios para tomar las mejores decisiones.</dd>
-							</dl>
-						</li>
-					</ul>
-					<p>¿Te interesa? <a href="#">Mándanos tu idea</a></p>
+		<section id="metodo" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>PROCESS</h1>
+						<ul class="n2">
+							<li>
+								<dl>
+									<dt>Observe</dt>
+									<dd>We start by carefully listen and watch how your team works. </dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>Plan</dt>
+									<dd>Discuss and look at the different options to stramline your workflow.</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>Implement</dt>
+									<dd>Build the solution that accommodates to your necessities.</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+		</section>
 
-	<section id="principios" class="remove">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>PRIN-CI-PIOS</h1>
-					<ul>
-						<li>
-							<dl>
-								<dt>Síntesis</dt>
-								<dd>Buscamos la pureza de las ideas para lograr la armonía en cada creación.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Continuidad</dt>
-								<dd>Hacemos de las ideas nuestra pasión y ponemos nuestra energía en concretarlas.</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Fe</dt>
-								<dd>Confiamos en las ideas y en la posibilidad de llegar a soluciones perfectas.</dd>
-							</dl>
-						</li>
-					</ul>
-					<p>¿Quieres colaborar? <a href="#">Escríbenos</a></p>
+		<section id="principios" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>VALUES</h1>
+						<ul>
+							<li>
+								<dl>
+									<dt>Synthesis</dt>
+									<dd>Purity, practicality, harmony</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>Immutability</dt>
+									<dd>Accessibility, durability, perfection</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+		</section>
 
-<section id="clients" class="remove">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>CLI-EN-TES</h1>
-					<h3>Proyectos en los que hemos trabajado</h3>
-					<ul class="n2">
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-						<li>
-							<dl>
-								logo
-							</dl>
-						</li>
-					</ul>
+	<section id="clients" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>CLIENTS</h1>
+						<ul>
+							<li><a target="_blank" href="https://sendengo.com">Sendengo</a></li>
+							<li><a target="_blank" href="https://www.vbenergy.com">VBEnergyzone</a></li>
+							<li><a target="_blank" href="https://zipfunder.com">Zipfunder</a></li>
+							<li><a target="_blank" href="https://civica.digital">Cívica Digital</a></li>
+							<li><a target="_blank" href="https://codeandomexico.org">Codeando México</a></li>
+							<li><a target="_blank" href="https://alluxi.com/es/">Alluxi</a></li>
+							<li><a target="_blank" href="https://simpat.tech">Simpatsolutions</a></li>
+							<li><a target="_blank" href="https://headspring.com">Headspring</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<span style="height: 0.01%;" class="remove">&nbsp;</span>
+		</section>
 
-	<section id="action" class="remove">
-		<div class="wrapper">
-			<div class="container">
-				<div class="content-center">
-					<h1>CON-TAC-TO</h1>
-					<h3>Sabemos que tienes una gran idea,<br>por eso queremos conocerte:</h3>
-					<form>
-						<label for='name'>Nombre</label>
-						<input type='text' id='name' placeholder='¿Cómo te llamas?' id='name' autocomplete='off'>
-						<label for='email'>Email</label>
-						<input type='text' id='email' placeholder='¿Dónde quieres que te respondamos?' autocomplete='off'>
-						<label for='message'>Mensaje</label>
-						<textarea id='message' placeholder='¿Cómo te podemos ayudar?'></textarea>
-						<input type='submit' value='Enviar'>
-					</form>
+		<section id="action" class="section">
+			<div class="wrapper">
+				<div class="container">
+					<div class="content-center">
+						<h1>CONTACT</h1>
+						<p><a href="mailto:hi@inmutable.mx">hi@inmutable.mx</a></p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
- <script src="./main.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.cjs.min.js"></script> -->
+	<!-- <script src="./main-debounce.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./main.js"></script>
 </body>
 </html>
